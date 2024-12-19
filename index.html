@@ -1,0 +1,69 @@
+<!doctype html>
+<html lang="es">
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no" />
+    <link rel="shortcut icon" href="favicon.ico" />
+    <link rel="stylesheet" href="estilos.css"/>
+    <script src="index.js"></script>
+    <script src="carrito.js"></script>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+</head>
+<body>
+    <header>
+        <h1>NATURA</h1>
+        <img src="imagenes/logo-natura.png" alt="logo natura">
+    </header>
+
+    <main>
+        <div class="alert alert-light alerta" role="alert">
+
+        </div>
+        <button class="d-none">Cancelar Timeout</button>
+        <div class="elementos">
+            <div id="carrito" class="carrito">
+                <p><span id="items-cantidad">0</span> ítems agregados</p>
+                <p>Total: $<span id="carrito-total">0</span></p>
+                <button id="mostrar-carrito" class="btn btn-info">Mostrar detalles del carrito</button>
+                <button id="limpiar-carrito" class="btn btn-danger">Limpiar carrito</button>
+                <button id="checkout" class="btn btn-success">Comprar</button>
+                <div id="detalle-carrito" class="detalle-carrito"></div>
+            </div>
+
+            <form id="formulario-checkout"></form>
+
+
+            <div class="filtros">
+                <div class="filtro-categoria">
+                    <label for="categoria">Filtrar por categoría:</label>
+                    <select id="categoria" name="categoria">
+                        <option value="todos">Todas</option>
+                        <option value="Línea 'TODO DIA'">Línea 'TODO DIA'</option>
+                        <option value="Línea 'EKOS'">Línea 'EKOS'</option>
+                        <option value="Línea 'KAIAK'">Línea 'KAIAK'</option>
+                    </select>
+                </div>
+
+                <div class="filtro-orden">
+                    <label for="ordenar">Ordenar por precio:</label>
+                    <select id="ordenar" name="ordenar">
+                        <option value="menor-mayor">Menor a mayor</option>
+                        <option value="mayor-menor">Mayor a menor</option>
+                    </select>
+                </div>
+            </div>
+        </div>
+
+        <div id="productos"></div>
+    </main>
+
+    <footer>
+        <ol>
+            <li>Integrantes: Burs Rosario y Mansilla Melany</li>
+            <li><a href="mailto:rosario.burs@davinci.edu.ar">Rosario.burs@davinci.edu.ar</a></li>
+            <li><a href="mailto:melany.mansilla@davinci.edu.ar">Melany.mansilla@davinci.edu.ar</a></li>
+            <li><a href="https://github.com/Melanymansilla12/Parcial2-Burs-Mansilla" target="_blank">Visita nuestro trabajo N2 en github</a></li>
+        </ol>
+    </footer>
+</body>
+</html>
